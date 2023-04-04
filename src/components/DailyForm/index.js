@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import FeatherIcon from 'feather-icons-react';
 import './DailyForm.css'
 
+const COMPLETE_DATESTRING_LENGTH = 10;
+
 export default function DailyForm() {
 
     /* Default Date is Today */
@@ -9,7 +11,7 @@ export default function DailyForm() {
     const mm = String(today.getMonth() + 1).padStart(2, '0');
     const dd = String(today.getDate()).padStart(2, '0');
     const yyyy = today.getFullYear();
-    const [date, setDate] = useState(`${mm}/${dd}/${yyyy}`);
+    const [date, setDate] = useState(`${yyyy}-${mm}-${dd}`);
 
     return (
         <>
@@ -25,7 +27,7 @@ export default function DailyForm() {
             </h1>
             <label>Date:</label>
             <input 
-                type="text" 
+                type="date" 
                 placeholder='MM/DD/YYYY'
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
