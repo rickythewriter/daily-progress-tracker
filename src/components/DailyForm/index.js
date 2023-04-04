@@ -6,7 +6,7 @@ const COMPLETE_DATESTRING_LENGTH = 10;
 
 export default function DailyForm() {
 
-    /* Default Date is Today */
+    /* Default Date is Today - No Interaction is Optimal Interaction */
     const today = new Date();
     const mm = String(today.getMonth() + 1).padStart(2, '0');
     const dd = String(today.getDate()).padStart(2, '0');
@@ -14,7 +14,7 @@ export default function DailyForm() {
     const [date, setDate] = useState(`${yyyy}-${mm}-${dd}`);
 
     return (
-        <>
+        <div className='form-container'>
             <img
                 className="logo"
                 src="https://github.com/rickythewriter/daily-progress-tracker/blob/containing-component/public/logo-tutoring_center.png?raw=true"
@@ -25,16 +25,21 @@ export default function DailyForm() {
             >
                 Daily Progress Tracker
             </h1>
-            <label>Date:</label>
-            <input 
-                type="date" 
-                placeholder='MM/DD/YYYY'
-                value={date}
-                onChange={(e) => setDate(e.target.value)}
-            >
-            </input>
+            <div className='form-row'>
+                <label 
+                    for="date"
+                    className='label has-right-margin'>Date:</label>
+                <input
+                    name='date'
+                    type="date"
+                    placeholder='MM/DD/YYYY'
+                    value={date}
+                    onChange={(e) => setDate(e.target.value)}
+                >
+                </input>
+            </div>
             {/* Student Component */}
             <FeatherIcon icon="plus-circle" size="44"/>
-        </>
+        </div>
     )
 }

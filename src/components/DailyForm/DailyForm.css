@@ -5,11 +5,32 @@
     --droplet-error-red: #EB5767;
 }
 
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .logo {
+    margin: 40px auto 32px auto;
     height: 46px;
 }
 
 .form-title {
+    margin: 0 auto 16px auto;
     color: var(--droplet-light-grey);
     font-size: 24px;
+}
+
+.form-row {
+    margin: 0 auto 16px auto;
+}
+
+.label {
+    font-weight: 700;
+}
+
+.has-right-margin {
+    margin-right: 16px;
 }
