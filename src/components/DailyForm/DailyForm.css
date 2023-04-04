@@ -1,0 +1,15 @@
+#root {
+    --droplet-light-grey: #676A6C;
+    --droplet-dark-grey: #9C9C9C;
+    --droplet-button-blue: #126B9C;
+    --droplet-error-red: #EB5767;
+}
+
+.logo {
+    height: 46px;
+}
+
+.form-title {
+    color: var(--droplet-light-grey);
+    font-size: 24px;
+}
