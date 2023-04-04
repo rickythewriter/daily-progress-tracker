@@ -32,6 +32,18 @@
     padding: 12px 0;
 }
 
+#demo-purposes {
+    background-color: #fafafa;
+    text-align: center;
+    border: solid thin var(--droplet-light-grey);
+    border-radius: 3px;
+}
+
+#demo-purposes > p {
+    font-weight: 700;
+    color: var(--droplet-light-grey);
+}
+
 @media screen and (width > 568px) {
     .tablet-row {
         /* display: flex; */

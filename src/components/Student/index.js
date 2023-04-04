@@ -19,6 +19,7 @@ export default function Student() {
     const [user, setUser] = useState({name: "Mr. Ricky"});
     const commenter = user.name ?? "Staff";
     const [body, setBody] = useState('');
+    const [buttonPressed, setButtonPressed] = useState(false);
 
     return (
         <div className='student-form-container'>
@@ -67,8 +68,18 @@ export default function Student() {
                 })}
             </div>
             <CommentForm user={{name: "Mr. Ricky"}} teacherComments={teacherComments} setTeacherComments={setTeacherComments}/>
+            {
+                buttonPressed &&
+                <div className='form-row student-form-row'>
+                    <div id='demo-purposes'>
+                        <p>This form is for demo purposes only.</p>
+                    </div>    
+                </div>
+            }
             <div className='form-row student-form-row'>
-                <button className='droplet-button'
+                <button 
+                    className='droplet-button'
+                    onClick={() => setButtonPressed(true)}
                 >
                     Download as PDF
                 </button>
