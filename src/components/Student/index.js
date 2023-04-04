@@ -10,10 +10,12 @@ export default function Student() {
     const [studentName, setStudentName] = useState('');
     const [homeworkComplete, setHomeworkComplete] = useState(false);
     const [extraWorkComplete, setExtraWorkComplete] = useState(false);
-    const [teacherComments, setTeacherComments] = useState([{
-        commenter: "Mr. Giles",
-        body: "Buffy does well on practice tests, and her homework is ok. She has been falling asleep during class this week."
-    }]);
+    const [teacherComments, setTeacherComments] = useState([
+        // {
+            // commenter: "Mr. Giles",
+            // body: "Buffy does well on practice tests, and her homework is ok. She has been falling asleep during class this week."
+        // }
+    ]);
     const [user, setUser] = useState({name: "Mr. Ricky"});
     const commenter = user.name ?? "Staff";
     const [body, setBody] = useState('');
