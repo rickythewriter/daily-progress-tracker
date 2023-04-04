@@ -44,7 +44,7 @@ export default function Student() {
                 >
                 </input>
             </div>
-            <div className='divider form-row'>
+            <div className='divider form-row label'>
                 Teacher Comments
             </div>
             <div className='form-row'>
