@@ -15,9 +15,26 @@
     margin-top: 16px;
 }
 
+#student-name-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#student-name-row > input {
+    flex-grow: 1;
+}
+
 .divider {
     background-color: var(--droplet-dark-grey);
     color: #000;
     text-align: center;
     padding: 12px 0;
+}
+
+@media screen and (width > 568px) {
+    .tablet-row {
+        /* display: flex; */
+        /* flex-direction: row; */
+    }
 }
