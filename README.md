@@ -3,7 +3,7 @@
 This tracker is useful for teachers, administrators, and parents of children at tutoring centers. 
 - Teachers who rotate through classrooms can access this app to see students' homework and supplementary work progress. 
 - Administrators can access this report to speak to parents about their children's behavior and progress.
-- Parents can receive a PDF report of students' homework progress, and teachers' comments.
+- Parents can receive a day's PDF report of students' homework progress, and teachers' comments.
 
 ## Technologies Used
 
