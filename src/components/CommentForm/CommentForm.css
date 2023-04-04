@@ -30,6 +30,6 @@
     color: var(--droplet-light-grey)
 }
 
-.add-comment-button {
+.comment-control-button {
     cursor: pointer;
 }
