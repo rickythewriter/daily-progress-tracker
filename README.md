@@ -1,9 +1,5 @@
 # Demo: Daily Behavior Tracker
 
-To Scott and Layne: 
-- Thanks so much for meeting me!
-- You were personable and a joy to talk to.
-
 This tracker is useful for teachers, administrators, and parents of children at tutoring centers. 
 - Teachers who rotate through classrooms can access this app to see students' homework and supplementary work progress. 
 - Administrators can access this report to speak to parents about their children's behavior and progress.
@@ -32,6 +28,11 @@ This tracker is useful for teachers, administrators, and parents of children at 
 1. Clone the project into a folder of your choice.
 2. On a terminal, navigate to project folder, and run `npm install` to install the project's dependencies.
 3. Run `npm start` to open the app, which runs on `http://localhost:3000/`.
+
+## Message to Scott and Layne
+
+- Thanks so much for meeting me!
+- You were personable and a joy to talk to.
 
 ## Candidate - Ricky Thang
 
