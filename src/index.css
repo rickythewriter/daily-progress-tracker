@@ -2,6 +2,7 @@
   --droplet-light-grey: #676A6C;
   --droplet-dark-grey: #9C9C9C;
   --droplet-button-blue: #126B9C;
+  --droplet-dark-blue: #0E2E5C;
   --droplet-error-red: #EB5767;
 }
 
@@ -32,6 +33,19 @@ code {
   cursor: pointer;
 }
 
+.droplet-button:hover {
+  background-color: var(--droplet-dark-blue);
+}
+
 input {
   font-size: 16px;
+}
+
+label.error {
+  color: var(--droplet-error-red);
+}
+
+input.error {
+  border: solid 2px var(--droplet-error-red);
+  border-radius: 3px;
 }

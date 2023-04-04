@@ -20,19 +20,38 @@ export default function Student() {
     const commenter = user.name ?? "Staff";
     const [body, setBody] = useState('');
     const [buttonPressed, setButtonPressed] = useState(false);
+    const [nameError, setNameError] = useState(false);
 
     return (
         <div className='student-form-container'>
             <div id='student-name-row' className='form-row student-form-row'>
-                <label
-                    for="name"
-                    className='label has-right-margin'>Student:</label>
-                <input
-                    name='name'
-                    type="input"
-                    placeholder='Name of Student'
-                    onChange={(e) => setStudentName(e.target.value)}
-                />
+                {
+                    nameError ?
+                    <>
+                        <label
+                            for="name"
+                            className='label has-right-margin error'>Student:</label>
+                        <input
+                            name='name'
+                            type="input"
+                            placeholder='Name of Student'
+                            className='error'
+                            onChange={(e) => setStudentName(e.target.value)}
+                        />
+                    </>
+                    :
+                    <>
+                        <label
+                            for="name"
+                            className='label has-right-margin'>Student:</label>
+                        <input
+                            name='name'
+                            type="input"
+                            placeholder='Name of Student'
+                            onChange={(e) => setStudentName(e.target.value)}
+                        />
+                    </>
+                }
             </div>
             <div className='form-row student-form-row'>
                 <label
@@ -79,7 +98,10 @@ export default function Student() {
             <div className='form-row student-form-row'>
                 <button 
                     className='droplet-button'
-                    onClick={() => setButtonPressed(true)}
+                    onClick={() => {
+                        if (!studentName) setNameError(true);
+                        setButtonPressed(true);
+                    }}
                 >
                     Download as PDF
                 </button>
