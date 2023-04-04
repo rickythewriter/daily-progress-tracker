@@ -1,5 +1,14 @@
+#root {
+  --droplet-light-grey: #676A6C;
+  --droplet-dark-grey: #9C9C9C;
+  --droplet-button-blue: #126B9C;
+  --droplet-dark-blue: #0E2E5C;
+  --droplet-error-red: #EB5767;
+}
+
 body {
   margin: 0;
+  width: 100vw;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +19,34 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.droplet-button {
+  background-color: var(--droplet-button-blue);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  height: 44px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.droplet-button:hover {
+  background-color: var(--droplet-dark-blue);
+}
+
+input {
+  font-size: 16px;
+}
+
+label.error {
+  color: var(--droplet-error-red);
+}
+
+input.error,
+textarea.error {
+  border: solid 2px var(--droplet-error-red);
+  border-radius: 3px;
 }
