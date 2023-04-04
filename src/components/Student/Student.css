@@ -1,0 +1,9 @@
+.student-form-container {
+    margin: 16px;
+    border: solid 1px var(--droplet-light-grey);
+}
+
+.divider {
+    background-color: var(--droplet-dark-grey);
+    color: #000;
+}

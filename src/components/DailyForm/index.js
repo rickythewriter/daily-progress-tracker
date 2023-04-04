@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import FeatherIcon from 'feather-icons-react';
+import Student from '../Student';
 import './DailyForm.css'
-
-const COMPLETE_DATESTRING_LENGTH = 10;
 
 export default function DailyForm() {
 
@@ -38,7 +37,7 @@ export default function DailyForm() {
                 >
                 </input>
             </div>
-            {/* Student Component */}
+            <Student />
             <FeatherIcon className='add-student-button' icon="plus-circle" size="44"/>
         </div>
     )

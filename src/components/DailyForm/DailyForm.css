@@ -1,10 +1,3 @@
-#root {
-    --droplet-light-grey: #676A6C;
-    --droplet-dark-grey: #9C9C9C;
-    --droplet-button-blue: #126B9C;
-    --droplet-error-red: #EB5767;
-}
-
 .form-container {
     display: flex;
     flex-direction: column;

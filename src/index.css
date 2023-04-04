@@ -1,3 +1,10 @@
+#root {
+  --droplet-light-grey: #676A6C;
+  --droplet-dark-grey: #9C9C9C;
+  --droplet-button-blue: #126B9C;
+  --droplet-error-red: #EB5767;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +17,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.droplet-button {
+  background-color: var(--droplet-button-blue);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  height: 44px;
+  width: 100%;
 }
