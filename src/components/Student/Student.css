@@ -4,10 +4,12 @@
     width: calc(100% - 32px);
     box-sizing: border-box;
     border-radius: 3px;
+    max-width: 662px;
 }
 
 .student-form-row {
     padding: 0 16px;
+    max-width: 630px;
 }
 
 .student-form-container > div:first-child {
@@ -19,4 +21,5 @@
     color: #000;
     text-align: center;
     padding: 12px 0;
+    max-width: 662px;
 }
