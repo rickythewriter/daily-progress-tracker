@@ -14,6 +14,7 @@ export default function CommentForm({ user, teacherComments, setTeacherComments 
                 <div className='teacher-comment-form-row'>
                     <textarea
                         id="teacher-comment-input"
+                        placeholder="Comment on your student's performance today"
                         value={body}
                         onChange={e => setBody(e.target.value)}
                     />
