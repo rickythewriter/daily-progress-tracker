@@ -1,6 +1,17 @@
 .student-form-container {
     margin: 16px;
     border: solid 1px var(--droplet-light-grey);
+    width: calc(100% - 32px);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.student-form-row {
+    padding: 0 16px;
+}
+
+.student-form-container > div:first-child {
+    margin-top: 16px;
 }
 
 .divider {
