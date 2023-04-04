@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FeatherIcon from 'feather-icons-react';
 import './Student.css'
 
 import Comment from '../Comment';
+import CommentForm from '../CommentForm';
 
 export default function Student() {
 
@@ -13,6 +14,17 @@ export default function Student() {
         commenter: "Mr. Giles",
         body: "Buffy does well on practice tests, and her homework is ok. She has been falling asleep during class this week."
     }]);
+    const [user, setUser] = useState({name: "Mr. Ricky"});
+    const commenter = user.name ?? "Staff";
+    const [body, setBody] = useState('');
+
+    useEffect(() => {
+        console.log(teacherComments);
+        console.log('teacherComments is Array? ', Array.isArray(teacherComments))
+        teacherComments.map(comment => {
+            console.log(comment.commenter);
+        })
+    }, [teacherComments]);
 
     return (
         <div className='student-form-container'>
@@ -55,14 +67,12 @@ export default function Student() {
             </div>
             <div className='teacher-comments'>
                 {teacherComments.map(comment => {
-                    console.log(comment.commenter);
-                    console.log(comment.body);
                     return (
                         <Comment comment={comment} key={comment.commenter} />
                     )
                 })}
-                {/* <CommentForm /> */}
             </div>
+            <CommentForm user={{name: "Mr. Ricky"}} teacherComments={teacherComments} setTeacherComments={setTeacherComments}/>
             <div className='form-row student-form-row'>
                 <button className='droplet-button'
                 >

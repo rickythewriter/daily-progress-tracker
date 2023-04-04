@@ -1,0 +1,35 @@
+#teacher-comment-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+#teacher-comment-input {
+    box-sizing: border-box;
+    align-self: center;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#teacher-comment-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-end;
+}
+
+#teacher-comment-controls > p {
+    text-align: right;
+    margin-right: 16px;
+}
+
+#add-comment-as {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--droplet-light-grey)
+}
+
+.add-comment-button {
+    cursor: pointer;
+}
