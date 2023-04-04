@@ -7,6 +7,7 @@ export default function CommentForm({ user, teacherComments, setTeacherComments 
     const commenter = user.name ?? "Staff";
     const [body, setBody] = useState('');
     const [commentCreated, setCommentCreated] = useState(false);
+    const [commentError, setCommentError] = useState(false);
 
     if (!commentCreated) {
         return (
@@ -14,6 +15,7 @@ export default function CommentForm({ user, teacherComments, setTeacherComments 
                 <div className='teacher-comment-form-row'>
                     <textarea
                         id="teacher-comment-input"
+                        className={commentError && 'error'}
                         placeholder="Comment on your student's performance today"
                         value={body}
                         onChange={e => setBody(e.target.value)}
@@ -32,6 +34,9 @@ export default function CommentForm({ user, teacherComments, setTeacherComments 
                                     body,
                                 }]);
                                 setCommentCreated(true);
+                                setCommentError(false);
+                            } else {
+                                setCommentError(true);
                             }
                         }}
                     />

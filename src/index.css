@@ -45,7 +45,8 @@ label.error {
   color: var(--droplet-error-red);
 }
 
-input.error {
+input.error,
+textarea.error {
   border: solid 2px var(--droplet-error-red);
   border-radius: 3px;
 }
