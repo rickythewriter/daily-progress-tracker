@@ -18,14 +18,6 @@ export default function Student() {
     const commenter = user.name ?? "Staff";
     const [body, setBody] = useState('');
 
-    useEffect(() => {
-        console.log(teacherComments);
-        console.log('teacherComments is Array? ', Array.isArray(teacherComments))
-        teacherComments.map(comment => {
-            console.log(comment.commenter);
-        })
-    }, [teacherComments]);
-
     return (
         <div className='student-form-container'>
             <div className='form-row student-form-row'>
