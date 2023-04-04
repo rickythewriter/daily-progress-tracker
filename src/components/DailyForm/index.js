@@ -5,6 +5,12 @@ import './DailyForm.css'
 
 export default function DailyForm() {
 
+    const [students, setStudents] = useState([<Student key={0}/>]);
+
+    let handleAddStudent = (e) => {
+        setStudents([...students, <Student key={students.length} />]);
+    }
+
     /* Default Date is Today - No Interaction is Optimal Interaction */
     const today = new Date();
     const mm = String(today.getMonth() + 1).padStart(2, '0');
@@ -37,8 +43,14 @@ export default function DailyForm() {
                 >
                 </input>
             </div>
-            <Student />
-            <FeatherIcon className='add-student-button' icon="plus-circle" size="44"/>
+            {/* <Student /> */}
+            {students}
+            <FeatherIcon 
+                className='add-student-button' 
+                icon="plus-circle" 
+                size="44"
+                onClick={handleAddStudent}
+            />
         </div>
     )
 }

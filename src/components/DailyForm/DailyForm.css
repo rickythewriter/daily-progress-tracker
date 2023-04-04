@@ -30,4 +30,5 @@
 
 .add-student-button {
     margin: 16px auto;
+    cursor: pointer;
 }
