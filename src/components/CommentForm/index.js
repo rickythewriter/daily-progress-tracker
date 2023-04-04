@@ -45,6 +45,7 @@ export default function CommentForm({ user, teacherComments, setTeacherComments 
                     <FeatherIcon
                         icon="edit"
                         size="44"
+                        id="edit-comment-button"
                         className='comment-control-button'
                         onClick={() => {
                             let comments = teacherComments.slice(0, -1);
