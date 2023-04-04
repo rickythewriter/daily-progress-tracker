@@ -39,7 +39,7 @@ export default function DailyForm() {
                 </input>
             </div>
             {/* Student Component */}
-            <FeatherIcon icon="plus-circle" size="44"/>
+            <FeatherIcon className='add-student-button' icon="plus-circle" size="44"/>
         </div>
     )
 }

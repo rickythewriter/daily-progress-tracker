@@ -34,3 +34,7 @@
 .has-right-margin {
     margin-right: 16px;
 }
+
+.add-student-button {
+    margin: 16px auto;
+}
