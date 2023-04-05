@@ -5,6 +5,11 @@ This tracker is useful for teachers, administrators, and parents of children at 
 - Administrators can access this report to speak to parents about their children's behavior and progress.
 - Parents can receive a day's PDF report of students' homework progress, and teachers' comments.
 
+## Message to Scott and Layne
+
+- Thanks so much for meeting me!
+- You were personable and a joy to talk to.
+
 ## Technologies Used
 
 - JavaScript
@@ -48,11 +53,6 @@ This tracker is useful for teachers, administrators, and parents of children at 
 1. Clone the project into a folder of your choice.
 2. On a terminal, navigate to project folder, and run `npm install` to install the project's dependencies.
 3. Run `npm start` to open the app, which runs on `http://localhost:3000/`.
-
-## Message to Scott and Layne
-
-- Thanks so much for meeting me!
-- You were personable and a joy to talk to.
 
 ## Candidate - Ricky Thang
 
