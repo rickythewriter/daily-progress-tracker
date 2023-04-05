@@ -21,12 +21,18 @@ This tracker is useful for teachers, administrators, and parents of children at 
     - Validations and Error Handling
 - Future Bonuses:
     - Export as PDF for parents
-    - Back-end
+    - Back End
 
 ## How Do I Start?
 
-1. On a terminal, run `npm install` to install the project's dependencies.
-2. Run `npm start` to open the app, which runs on `http://localhost:3000/`.
+1. Clone the project into a folder of your choice.
+2. On a terminal, navigate to project folder, and run `npm install` to install the project's dependencies.
+3. Run `npm start` to open the app, which runs on `http://localhost:3000/`.
+
+## Message to Scott and Layne
+
+- Thanks so much for meeting me!
+- You were personable and a joy to talk to.
 
 ## Candidate - Ricky Thang
 
