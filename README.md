@@ -23,6 +23,26 @@ This tracker is useful for teachers, administrators, and parents of children at 
     - Export as PDF for parents
     - Back End
 
+
+### Home Page with Default Date of Current Day
+
+![Home](https://github.com/rickythewriter/daily-progress-tracker/blob/master/public/screens/home.png)
+
+
+### Error States
+
+![Empty Name on Submit](https://github.com/rickythewriter/daily-progress-tracker/blob/master/public/screens/error-empty-name.png)
+
+![Post Empty Comment](https://github.com/rickythewriter/daily-progress-tracker/blob/master/public/screens/error-empty-comment.png)
+
+### Filled Fields
+
+![Filled Fields](https://github.com/rickythewriter/daily-progress-tracker/blob/master/public/screens/filled-fields.png)
+
+### Multiple Students
+
+![Multiple Students](https://github.com/rickythewriter/daily-progress-tracker/blob/master/public/screens/multiple-forms.png)
+
 ## How Do I Start?
 
 1. Clone the project into a folder of your choice.
